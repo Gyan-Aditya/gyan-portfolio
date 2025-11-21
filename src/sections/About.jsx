@@ -56,7 +56,8 @@ const About = () => {
             <div className="grid-default-color grid-5">
                 <div className="z-10 w-[50%]">
                     <p className="headtext">Tech Stack</p>
-                    <p className="subtext">From syntax to scale, I master the spectrum. I wield a versatile arsenal of languages, frameworks, and tools to design and deploy robust, high-performance applications.</p>
+                    <p className="subtext hidden md:block">From syntax to scale, I master the spectrum. I wield a versatile arsenal of languages, frameworks, and tools to design and deploy robust, high-performance applications.</p>
+                    <p className="subtext md:hidden">I wield a versatile arsenal of languages, frameworks, and tools to design and deploy robust, high-performance applications.</p>
                 </div>
                 <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
                     <Frameworks/>
