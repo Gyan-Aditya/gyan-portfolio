@@ -12,7 +12,9 @@ const Project = ({title,description,subDescription,href,image,tags,setPreview}) 
                     {tags.map((tag)=>(<span key={tag.id}>{tag.name}</span>))}
                 </div>
             </div>
-            <button onClick={()=>setIsHidden(true)} className="flex items-center gap-1 cursor-pointer hover-animation">
+            <button onClick={()=>{setIsHidden(true);
+                setPreview(null)
+            }} className="flex items-center gap-1 cursor-pointer hover-animation">
                 Read More
                 <img src='assets/arrow-right.svg' className="w-5"/>
             </button>      
