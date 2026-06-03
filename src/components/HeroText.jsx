@@ -10,6 +10,7 @@ const HeroText = () => {
     <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
         {/*Dekstop view*/}
         <div className='flex-col hidden md:flex c-space'>
+            <img src="assets/gyan.png" className="rounded-full w-40 h-40 object-cover my-6 shadow-xl ring-4 ring-neutral-700 md:self-start"/>
             <motion.h1 className="text-4xl font-medium" variants={variants} initial="hidden" animate="visible" transition={{delay:1}}>Hi, I'm Gyan</motion.h1>
             <div className="flex flex-col items-start">
                 <motion.p className="text-5xl font-medium text-neutral-300" variants={variants} initial="hidden" animate="visible" transition={{delay:1.2}}>A Developer <br/> Dedicated to Crafting</motion.p>

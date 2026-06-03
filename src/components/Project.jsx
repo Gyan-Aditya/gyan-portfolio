@@ -13,7 +13,7 @@ const Project = ({title,description,subDescription,href,image,tags,setPreview}) 
                 </div>
             </div>
             <button onClick={()=>{setIsHidden(true);
-                setPreview(null)
+                setPreview(null);
             }} className="flex items-center gap-1 cursor-pointer hover-animation">
                 Read More
                 <img src='assets/arrow-right.svg' className="w-5"/>
