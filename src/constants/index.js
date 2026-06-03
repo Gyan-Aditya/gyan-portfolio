@@ -38,6 +38,43 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "Splitter",
+    description:
+      "A modern bill-splitting app that helps groups divide shared expenses fairly, track contributions, and stay organized with an intuitive, collaborative experience.",
+    subDescription: [
+      "Secure Google OAuth 2.0 authentication powered by Passport.js for easy sign-in and personalized expense tracking.",
+      "Create and manage group bills with automatic per-person calculations, tip support, and customizable expense shares.",
+      "Built with an EJS-powered frontend and a Node.js/Express backend for fast, reliable interactions.",
+      "Integrated Razorpay payment gateway for seamless, secure bill payments directly within the app.",
+    ],
+    href: "https://splitter-weog.onrender.com/login",
+    logo: "",
+    image: "/assets/projects/splitter.png",
+    tags: [
+      {
+        id: 1,
+        name: "Node.js",
+        path: "/assets/logos/Node.js.svg",
+      },
+      {
+        id: 2,
+        name: "EJS",
+        path: "/assets/logos/ejs.svg",
+      },
+      {
+        id: 3,
+        name: "Express",
+        path: "/assets/logos/Express.svg",
+      },
+      {
+        id: 4,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Audio Classification",
     description:
       "A machine learning model for classifying environmental sounds, built using TensorFlow/Keras and deployed as a user-friendly web interface with Streamlit.",
@@ -69,7 +106,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Modern, Secure, and Feature-Rich Blogging Platform",
     description:
       "A full-stack blogging application that allows users to create, read, update, and delete their own posts, featuring robust authentication and protected routes.",
@@ -106,7 +143,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "URL Shortener Application",
     description:
       "A full-stack web service designed to convert long, complex Uniform Resource Locators (URLs) into short, manageable links, and manage the corresponding redirects.",
@@ -170,7 +207,7 @@ export const educations = [
     contents: [
       "Location-: Bhubaneswar, Odisha, India",
       "Field of study-: Computer Science and Engineering",
-      "CGPA-: 8.39/10 (till 6th semester)",
+      "CGPA-: 8.51/10",
     ],
   },
   {

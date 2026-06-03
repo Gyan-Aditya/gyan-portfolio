@@ -1,7 +1,7 @@
 import { mySocials } from "../constants"
 
 const BASE_URL = import.meta.env.BASE_URL;
-
+const resolveAssetUrl = (path) => path?.startsWith("/") ? path : `${BASE_URL}${path}`;
 const Footer = () => {
   return (
     <section className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex gap-3">
             {mySocials.map((social,index)=>(
                 <a href={social.href} key={index}>
-                    <img src={`${BASE_URL}${social.icon}`} className="w-5 h-5" alt={social.name}/>
+                    <img src={resolveAssetUrl(social.icon)} className="w-5 h-5" alt={social.name}/>
                 </a>
             ))}
         </div>

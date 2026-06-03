@@ -5,8 +5,8 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: Portfolio
-Generated On: 2026-06-03 19:41:30 (Asia/Calcutta / GMT+06:30)
-Total Files Processed: 87
+Generated On: 2026-06-03 20:52:58 (Asia/Calcutta / GMT+06:30)
+Total Files Processed: 89
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
 
@@ -42,6 +42,7 @@ PROJECT STRUCTURE
 │   │   │   ├── 📄 MongoDB.svg (5.48 KB)
 │   │   │   ├── 📄 MySQL.svg (2.75 KB)
 │   │   │   ├── 📄 Node.js.svg (1.49 KB)
+│   │   │   ├── 📄 postgresql.svg (6.75 KB)
 │   │   │   ├── 📄 Python.svg (2.25 KB)
 │   │   │   ├── 📄 react.svg (2.56 KB)
 │   │   │   ├── 📄 scikit-learn.svg (4.55 KB)
@@ -57,6 +58,7 @@ PROJECT STRUCTURE
 │   │   │   ├── 📄 audio.png (78.62 KB)
 │   │   │   ├── 📄 Blog.png (100.29 KB)
 │   │   │   ├── 📄 Query.png (333.58 KB)
+│   │   │   ├── 📄 splitter.png (74.6 KB)
 │   │   │   └── 📄 url.png (43.67 KB)
 │   │   ├── 📁 socials/
 │   │   │   ├── 📄 github-white-icon.svg (1.19 KB)
@@ -89,25 +91,25 @@ PROJECT STRUCTURE
 │   │   ├── 📄 FlipWords.jsx (2.63 KB)
 │   │   ├── 📄 Frameworks.jsx (1.08 KB)
 │   │   ├── 📄 globe.jsx (3.4 KB)
-│   │   ├── 📄 HeroText.jsx (2.27 KB)
+│   │   ├── 📄 HeroText.jsx (2.13 KB)
 │   │   ├── 📄 Loader.jsx (245 B)
 │   │   ├── 📄 Marquee.jsx (895 B)
 │   │   ├── 📄 OrbitingCircles.jsx (1.44 KB)
 │   │   ├── 📄 ParallaxBackground.jsx (2.22 KB)
 │   │   ├── 📄 Particles.jsx (7.5 KB)
 │   │   ├── 📄 Project.jsx (1.3 KB)
-│   │   ├── 📄 ProjectDetails.jsx (1.68 KB)
+│   │   ├── 📄 ProjectDetails.jsx (1.81 KB)
 │   │   └── 📄 Timeline.jsx (2.94 KB)
 │   ├── 📁 constants/
-│   │   └── 📄 index.js (7.79 KB)
+│   │   └── 📄 index.js (9.03 KB)
 │   ├── 📁 sections/
 │   │   ├── 📄 About.jsx (4.42 KB)
 │   │   ├── 📄 Contact.jsx (3.93 KB)
 │   │   ├── 📄 Educations.jsx (264 B)
-│   │   ├── 📄 Footer.jsx (890 B)
+│   │   ├── 📄 Footer.jsx (977 B)
 │   │   ├── 📄 Hero.jsx (1.31 KB)
 │   │   ├── 📄 Navbar.jsx (1.92 KB)
-│   │   ├── 📄 Projects.jsx (1.18 KB)
+│   │   ├── 📄 Projects.jsx (1.27 KB)
 │   │   └── 📄 Testimonial.jsx (1.92 KB)
 │   ├── 📄 App.jsx (629 B)
 │   ├── 📄 index.css (3.51 KB)
@@ -118,22 +120,22 @@ PROJECT STRUCTURE
 ├── 📄 package.json (1.07 KB)
 ├── 📄 README.md (1.13 KB)
 ├── 📄 tailwind.config.js (191 B)
-└── 📄 vite.config.js (245 B)
+└── 📄 vite.config.js (230 B)
 
 ================================================================================
 PROJECT STATISTICS
 ================================================================================
-Total Files: 87
+Total Files: 89
 Total Directories: 10
 Text Files: 35
-Binary Files: 52
-Total Size: 10.01 MB
+Binary Files: 54
+Total Size: 10.09 MB
 
 FILE TYPES DISTRIBUTION:
 ------------------------------
-.svg            : 36
+.svg            : 37
 .jsx            : 26
-.png            : 14
+.png            : 15
 .js             : 4
 .json           : 2
 .jpg            : 1
@@ -167,6 +169,7 @@ BINARY/EXCLUDED FILES (not included in text content)
 - public/assets/logos/MongoDB.svg
 - public/assets/logos/MySQL.svg
 - public/assets/logos/Node.js.svg
+- public/assets/logos/postgresql.svg
 - public/assets/logos/Python.svg
 - public/assets/logos/react.svg
 - public/assets/logos/scikit-learn.svg
@@ -186,6 +189,7 @@ BINARY/EXCLUDED FILES (not included in text content)
 - public/assets/projects/audio.png
 - public/assets/projects/Blog.png
 - public/assets/projects/Query.png
+- public/assets/projects/splitter.png
 - public/assets/projects/url.png
 
 
@@ -848,15 +852,15 @@ FILE: src/components/HeroText.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 2.27 KB
+Size: 2.13 KB
 Extension: .jsx
 Language: jsx
 Location: src/components/HeroText.jsx
 Relative Path: src/components
 Created: 2025-11-18 19:01:59 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-22 19:11:20 (Asia/Calcutta / GMT+06:30)
-MD5: 316ccb0f159897df311c7b6cf15e8762
-SHA256: 8e6914a6393160d48087009465fcb7c68a0e2841eeefec8e7e6345723c90019e
+Modified: 2026-06-03 20:50:25 (Asia/Calcutta / GMT+06:30)
+MD5: fbcf6ccde2fb5cddf986a6aafd7db0d3
+SHA256: 2a7b0dbfc47f96626852246b213f24d9572e50ecdf9fcd1d243b67375957ac1b
 Encoding: ASCII
 
 FILE CONTENT:
@@ -873,7 +877,6 @@ const HeroText = () => {
     <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
         {/*Dekstop view*/}
         <div className='flex-col hidden md:flex c-space'>
-            <img src="assets/gyan.png" className="rounded-full w-40 h-40 object-cover my-6 shadow-xl ring-4 ring-neutral-700 md:self-start"/>
             <motion.h1 className="text-4xl font-medium" variants={variants} initial="hidden" animate="visible" transition={{delay:1}}>Hi, I'm Gyan</motion.h1>
             <div className="flex flex-col items-start">
                 <motion.p className="text-5xl font-medium text-neutral-300" variants={variants} initial="hidden" animate="visible" transition={{delay:1.2}}>A Developer <br/> Dedicated to Crafting</motion.p>
@@ -1469,7 +1472,7 @@ Language: jsx
 Location: src/components/Project.jsx
 Relative Path: src/components
 Created: 2025-11-19 20:28:53 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-12-23 19:25:09 (Asia/Calcutta / GMT+06:30)
+Modified: 2026-06-03 20:38:31 (Asia/Calcutta / GMT+06:30)
 MD5: 8a69cb0f11b73fc1fb93c062536af3d6
 SHA256: e771c471f016498be6d1869c6b93668a946c208be819c3bfb0b6f5fe645b0300
 Encoding: ASCII
@@ -1514,15 +1517,15 @@ FILE: src/components/ProjectDetails.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.68 KB
+Size: 1.81 KB
 Extension: .jsx
 Language: jsx
 Location: src/components/ProjectDetails.jsx
 Relative Path: src/components
 Created: 2025-11-19 20:59:26 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 19:50:35 (Asia/Calcutta / GMT+06:30)
-MD5: 5f91a0b29d8a1ee0346d83c9b3707983
-SHA256: 88704db34464e239f0140afc4b60f59f5e3e7b73c779630d8757f2d585ec91e6
+Modified: 2026-06-03 20:38:25 (Asia/Calcutta / GMT+06:30)
+MD5: 9d3c3269a8fd4b3b1dee8d80130a4caf
+SHA256: f2ecf1a0c100ca674f9770625fad12285bf0adf3cc66982f537bd36edc751755
 Encoding: ASCII
 
 FILE CONTENT:
@@ -1530,15 +1533,16 @@ FILE CONTENT:
 import {motion} from 'motion/react';
 
 const BASE_URL = import.meta.env.BASE_URL;
+const resolveAssetUrl = (path) => path?.startsWith("/") ? path : `${BASE_URL}${path}`;
 
 const ProjectDetails = ({title, description, subDescription, image, tags, href,closeModal}) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10" initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}}>
         <button onClick={closeModal} className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500">
-            <img src='assets/close.svg' className="w-6 h-6"/>
+            <img src={resolveAssetUrl('assets/close.svg')} className="w-6 h-6"/>
         </button>
-        <img src={`${BASE_URL}${image}`} alt={title} className="w-full rounded-t-2xl"/>
+        <img src={resolveAssetUrl(image)} alt={title} className="w-full rounded-t-2xl"/>
         <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold text-white ">{title}</h5>
             <p className="mb-3 font-normal text-neutral-400">{description}</p>
@@ -1546,10 +1550,10 @@ const ProjectDetails = ({title, description, subDescription, image, tags, href,c
         </div>
         <div className="flex items-center justify-between mt-4">
             <div className="flex gap-3">
-                {tags.map((tag)=>(<img key={tag.id} src={`${BASE_URL}${tag.path}`} alt={tag.name} className="rounded-lg size-10 hover-animation"/>))}
+                {tags.map((tag)=>(<img key={tag.id} src={resolveAssetUrl(tag.path)} alt={tag.name} className="rounded-lg size-10 hover-animation"/>))}
             </div>
             <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"href={href}>
-                View Project <img src='assets/arrow-up.svg' className="size-4" />
+                View Project <img src={resolveAssetUrl('assets/arrow-up.svg')} className="size-4" />
             </a>
         </div>
       </motion.div>
@@ -1662,15 +1666,15 @@ FILE: src/constants/index.js
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 7.79 KB
+Size: 9.03 KB
 Extension: .js
 Language: javascript
 Location: src/constants/index.js
 Relative Path: src/constants
 Created: 2025-11-19 20:21:58 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 13:03:02 (Asia/Calcutta / GMT+06:30)
-MD5: 4f1fdbf003ab70194894cc29dc1aee98
-SHA256: f51c19b5ef0600aa8989391dca21ca17d330517d8bfc832c0f51ac2b34d4d64e
+Modified: 2026-06-03 20:29:30 (Asia/Calcutta / GMT+06:30)
+MD5: 2ec758f153835c821e7a744e1eaa6bc6
+SHA256: c58bf05b0118b63b0be4026790a3ab5c3440847adbb293e5b496bd8e0c5bb054
 Encoding: ASCII
 
 FILE CONTENT:
@@ -1715,6 +1719,43 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "Splitter",
+    description:
+      "A modern bill-splitting app that helps groups divide shared expenses fairly, track contributions, and stay organized with an intuitive, collaborative experience.",
+    subDescription: [
+      "Secure Google OAuth 2.0 authentication powered by Passport.js for easy sign-in and personalized expense tracking.",
+      "Create and manage group bills with automatic per-person calculations, tip support, and customizable expense shares.",
+      "Built with an EJS-powered frontend and a Node.js/Express backend for fast, reliable interactions.",
+      "Integrated Razorpay payment gateway for seamless, secure bill payments directly within the app.",
+    ],
+    href: "https://splitter-weog.onrender.com/login",
+    logo: "",
+    image: "/assets/projects/splitter.png",
+    tags: [
+      {
+        id: 1,
+        name: "Node.js",
+        path: "/assets/logos/Node.js.svg",
+      },
+      {
+        id: 2,
+        name: "EJS",
+        path: "/assets/logos/ejs.svg",
+      },
+      {
+        id: 3,
+        name: "Express",
+        path: "/assets/logos/Express.svg",
+      },
+      {
+        id: 4,
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Audio Classification",
     description:
       "A machine learning model for classifying environmental sounds, built using TensorFlow/Keras and deployed as a user-friendly web interface with Streamlit.",
@@ -1746,7 +1787,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Modern, Secure, and Feature-Rich Blogging Platform",
     description:
       "A full-stack blogging application that allows users to create, read, update, and delete their own posts, featuring robust authentication and protected routes.",
@@ -1783,7 +1824,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "URL Shortener Application",
     description:
       "A full-stack web service designed to convert long, complex Uniform Resource Locators (URLs) into short, manageable links, and manage the corresponding redirects.",
@@ -1847,7 +1888,7 @@ export const educations = [
     contents: [
       "Location-: Bhubaneswar, Odisha, India",
       "Field of study-: Computer Science and Engineering",
-      "CGPA-: 8.39/10 (till 6th semester)",
+      "CGPA-: 8.51/10",
     ],
   },
   {
@@ -2160,15 +2201,15 @@ FILE: src/sections/Footer.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 890 B
+Size: 977 B
 Extension: .jsx
 Language: jsx
 Location: src/sections/Footer.jsx
 Relative Path: src/sections
 Created: 2025-11-21 11:04:56 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 19:24:23 (Asia/Calcutta / GMT+06:30)
-MD5: 58b5ff7327d2d8ebb1d49c5fc818b897
-SHA256: a972df2802e8fadc34b738a8d20417e2c4399b9835b0dc125bdb75e835f12550
+Modified: 2026-06-03 20:44:12 (Asia/Calcutta / GMT+06:30)
+MD5: 3f0452696eebeeb2047d3775903a21fd
+SHA256: 9b1ba98da9dfa480b200d897f5984c99431e9301aa926e1b525f89ccf9479e9d
 Encoding: UTF-8
 
 FILE CONTENT:
@@ -2176,7 +2217,7 @@ FILE CONTENT:
 import { mySocials } from "../constants"
 
 const BASE_URL = import.meta.env.BASE_URL;
-
+const resolveAssetUrl = (path) => path?.startsWith("/") ? path : `${BASE_URL}${path}`;
 const Footer = () => {
   return (
     <section className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
@@ -2189,7 +2230,7 @@ const Footer = () => {
         <div className="flex gap-3">
             {mySocials.map((social,index)=>(
                 <a href={social.href} key={index}>
-                    <img src={`${BASE_URL}${social.icon}`} className="w-5 h-5" alt={social.name}/>
+                    <img src={resolveAssetUrl(social.icon)} className="w-5 h-5" alt={social.name}/>
                 </a>
             ))}
         </div>
@@ -2215,7 +2256,7 @@ Language: jsx
 Location: src/sections/Hero.jsx
 Relative Path: src/sections
 Created: 2025-11-18 18:57:02 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-20 17:57:27 (Asia/Calcutta / GMT+06:30)
+Modified: 2026-06-03 20:48:27 (Asia/Calcutta / GMT+06:30)
 MD5: 21b2da8715f584eb022931f46b47177e
 SHA256: 3638130b516a0d9bc6cf564a4f4bd2cfe66445fc3a9e0a4c3672d413240bc1ba
 Encoding: ASCII
@@ -2336,15 +2377,15 @@ FILE: src/sections/Projects.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.18 KB
+Size: 1.27 KB
 Extension: .jsx
 Language: jsx
 Location: src/sections/Projects.jsx
 Relative Path: src/sections
 Created: 2025-11-19 20:19:40 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 20:44:22 (Asia/Calcutta / GMT+06:30)
-MD5: 23a42823db48cc9f5eb3d24ddde82421
-SHA256: cc91b3a2fed191b606dc0450ca45cb8dd7977e1ea245468b2db831daef52a48c
+Modified: 2026-06-03 20:38:00 (Asia/Calcutta / GMT+06:30)
+MD5: e80cf59be0a6761c741abf46ac507026
+SHA256: 3217e14bbffb1c486b9b0a99ce86a34d68fa58f2cf10fcc346e70a4c86c187ae
 Encoding: ASCII
 
 FILE CONTENT:
@@ -2355,6 +2396,7 @@ import { myProjects } from "../constants"
 import {motion, useMotionValue, useSpring} from 'motion/react';
 
 const BASE_URL = import.meta.env.BASE_URL;
+const resolveAssetUrl = (path) => path?.startsWith("/") ? path : `${BASE_URL}${path}`;
 
 const Projects = () => {
   const x=useMotionValue(0);
@@ -2371,7 +2413,7 @@ const Projects = () => {
         <h2 className="text-heading">My Selected Projects</h2>
         <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/>
         {myProjects.map((project)=>(<Project key={project.id} {...project} setPreview={setPreview}/>))}
-        {preview && <motion.img className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg shadow-lg pointer-events-none w-80" src={`${BASE_URL}${preview}`} style={{x:springX, y:springY}}/>}
+        {preview && <motion.img className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg shadow-lg pointer-events-none w-80" src={resolveAssetUrl(preview)} style={{x:springX, y:springY}}/>}
     </section>
   )
 }
@@ -7731,15 +7773,15 @@ FILE: vite.config.js
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 245 B
+Size: 230 B
 Extension: .js
 Language: javascript
 Location: vite.config.js
 Relative Path: root
 Created: 2025-11-18 12:02:03 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 19:00:13 (Asia/Calcutta / GMT+06:30)
-MD5: 2da744076afd03c417cc9b1591b56f7d
-SHA256: c534ffa2c97be4bf9bf84063e2fd465fdbe2b1e54ecfb4438aa0692dcb42aeda
+Modified: 2026-06-03 19:53:24 (Asia/Calcutta / GMT+06:30)
+MD5: 1cf292a018f99c06a128ecfe6a6f4183
+SHA256: 6ebd4f954dfc009edd311271086134903f6da90c3ec899191886e058f1c21a2f
 Encoding: ASCII
 
 FILE CONTENT:
@@ -7750,7 +7792,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base: "/gyan-portfolio/"
+  base: "/"
 })
 
 ================================================================================
