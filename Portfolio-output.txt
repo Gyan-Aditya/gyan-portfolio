@@ -5,8 +5,8 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: Portfolio
-Generated On: 2026-06-03 22:35:39 (Asia/Calcutta / GMT+06:30)
-Total Files Processed: 90
+Generated On: 2026-06-04 21:31:25 (Asia/Calcutta / GMT+06:30)
+Total Files Processed: 91
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
 
@@ -89,6 +89,7 @@ PROJECT STRUCTURE
 │   │   ├── 📄 Astronaut.jsx (4.82 KB)
 │   │   ├── 📄 Card.jsx (592 B)
 │   │   ├── 📄 CopyEmailButton.jsx (1.4 KB)
+│   │   ├── 📄 CustomCursor.jsx (4.03 KB)
 │   │   ├── 📄 FlipWords.jsx (2.63 KB)
 │   │   ├── 📄 Frameworks.jsx (1.08 KB)
 │   │   ├── 📄 globe.jsx (3.4 KB)
@@ -98,22 +99,22 @@ PROJECT STRUCTURE
 │   │   ├── 📄 OrbitingCircles.jsx (1.44 KB)
 │   │   ├── 📄 ParallaxBackground.jsx (2.22 KB)
 │   │   ├── 📄 Particles.jsx (7.5 KB)
-│   │   ├── 📄 Project.jsx (1.3 KB)
-│   │   ├── 📄 ProjectDetails.jsx (1.81 KB)
+│   │   ├── 📄 Project.jsx (1.96 KB)
+│   │   ├── 📄 ProjectDetails.jsx (5.05 KB)
 │   │   └── 📄 Timeline.jsx (2.94 KB)
 │   ├── 📁 constants/
-│   │   └── 📄 index.js (9.03 KB)
+│   │   └── 📄 index.js (4.61 KB)
 │   ├── 📁 sections/
-│   │   ├── 📄 About.jsx (4.42 KB)
+│   │   ├── 📄 About.jsx (13.76 KB)
 │   │   ├── 📄 Contact.jsx (3.93 KB)
 │   │   ├── 📄 Educations.jsx (264 B)
 │   │   ├── 📄 Footer.jsx (977 B)
-│   │   ├── 📄 Hero.jsx (1.31 KB)
-│   │   ├── 📄 Navbar.jsx (1.92 KB)
+│   │   ├── 📄 Hero.jsx (13.18 KB)
+│   │   ├── 📄 Navbar.jsx (2.43 KB)
 │   │   ├── 📄 Projects.jsx (1.27 KB)
-│   │   └── 📄 Testimonial.jsx (1.92 KB)
-│   ├── 📄 App.jsx (629 B)
-│   ├── 📄 index.css (3.51 KB)
+│   │   └── 📄 Testimonial.jsx (1.85 KB)
+│   ├── 📄 App.jsx (950 B)
+│   ├── 📄 index.css (4.36 KB)
 │   └── 📄 main.jsx (229 B)
 ├── 📄 eslint.config.js (758 B)
 ├── 📄 index.html (361 B)
@@ -126,16 +127,16 @@ PROJECT STRUCTURE
 ================================================================================
 PROJECT STATISTICS
 ================================================================================
-Total Files: 90
+Total Files: 91
 Total Directories: 10
-Text Files: 35
+Text Files: 36
 Binary Files: 55
-Total Size: 10.1 MB
+Total Size: 10.12 MB
 
 FILE TYPES DISTRIBUTION:
 ------------------------------
 .svg            : 37
-.jsx            : 26
+.jsx            : 27
 .png            : 16
 .js             : 4
 .json           : 2
@@ -247,9 +248,9 @@ Language: jsx
 Location: src/components/Alert.jsx
 Relative Path: src/components
 Created: 2025-11-21 10:21:19 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 10:49:45 (Asia/Calcutta / GMT+06:30)
-MD5: 9df71ab167f8b4f04c645e8a156c4f41
-SHA256: d79e2260dd32db5385d00caea0d7a3eb6729d9d444bafadd143fed9dfc3755b4
+Modified: 2026-06-04 20:14:46 (Asia/Calcutta / GMT+06:30)
+MD5: e3a0f5fd6677faaaa65b256dd033a023
+SHA256: 9cd592022c9a5aabf84f70ee8a4ac1c37cc0376551b3dbff556e34df0c074058
 Encoding: ASCII
 
 FILE CONTENT:
@@ -263,7 +264,7 @@ const Alert = ({type,text}) => {
     };
   return (
     <AnimatePresence>
-    <motion.div className="fixed z-50 flex items-center jusitfy-center bottom-5 right-5" initial="hidden" animate="visible" exit="exit" variants={alertVarients} transition={{duration:0.3, ease:"easeInOut"}}>
+    <motion.div className="fixed z-50 flex items-center justify-center bottom-5 right-5" initial="hidden" animate="visible" exit="exit" variants={alertVarients} transition={{duration:0.3, ease:"easeInOut"}}>
       <div className={`p-2 ${type=== "danger" ? "bg-red-800" : "bg-royal"} items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex rounded-md p-5`}>
         <p className={`flex rounded-full ${type=== "danger" ? "bg-red-500" : "bg-lavender"} uppercase px-2 py-1 text-xs font-semibold mr-3`}>{type=== "danger" ? "Failed" : "Success"}</p>
         <p className="mr-2 text-left">{text}</p>
@@ -521,6 +522,146 @@ const CopyEmailButton = () => {
 
 export default CopyEmailButton
 
+================================================================================
+
+
+================================================================================
+FILE: src/components/CustomCursor.jsx
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 4.03 KB
+Extension: .jsx
+Language: jsx
+Location: src/components/CustomCursor.jsx
+Relative Path: src/components
+Created: 2026-06-04 20:32:36 (Asia/Calcutta / GMT+06:30)
+Modified: 2026-06-04 20:43:50 (Asia/Calcutta / GMT+06:30)
+MD5: 71bd43b21da7d52895958198e7c160ef
+SHA256: fda8d4c0116f5da7ad7d533eb3ba666fbfe45505ede0da631d4827f71458ba2f
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+import { useEffect, useState } from "react";
+import { motion, useMotionValue, useSpring } from "motion/react";
+
+const CustomCursor = () => {
+  const [cursorType, setCursorType] = useState("default");
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Position tracking using Motion Values
+  const cursorX = useMotionValue(-100);
+  const cursorY = useMotionValue(-100);
+
+  // Physics springs for a fluid, lag-free fluid trailing effect
+  const springConfig = { damping: 30, stiffness: 300, mass: 0.6 };
+  const cursorXSpring = useSpring(cursorX, springConfig);
+  const cursorYSpring = useSpring(cursorY, springConfig);
+
+  useEffect(() => {
+    // Completely disable on mobile devices to prevent touch interaction conflicts
+    if (window.matchMedia("(max-width: 768px)").matches) return;
+
+    const moveCursor = (e) => {
+      cursorX.set(e.clientX);
+      cursorY.set(e.clientY);
+      if (!isVisible) setIsVisible(true);
+    };
+
+    // Detect when hovering over interactive components across your whole app
+    const handleMouseOver = (e) => {
+      const target = e.target;
+      if (
+        target.tagName === "A" ||
+        target.tagName === "BUTTON" ||
+        target.closest("button") ||
+        target.closest("a") ||
+        target.closest(".grid-default-color") ||
+        target.closest(".grid-black-color") ||
+        target.closest(".grid-special-color")
+      ) {
+        setCursorType("hovered");
+      } else {
+        setCursorType("default");
+      }
+    };
+
+    const handleMouseLeave = () => setIsVisible(false);
+    const handleMouseEnter = () => setIsVisible(true);
+
+    window.addEventListener("mousemove", moveCursor);
+    window.addEventListener("mouseover", handleMouseOver);
+    document.addEventListener("mouseleave", handleMouseLeave);
+    document.addEventListener("mouseenter", handleMouseEnter);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+      window.removeEventListener("mouseover", handleMouseOver);
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("mouseenter", handleMouseEnter);
+    };
+  }, [isVisible]);
+
+  if (!isVisible) return null;
+
+  // Variants to switch cursor behavior dynamically when hovering or idling
+  const variants = {
+    default: {
+      width: 16,
+      height: 16,
+      backgroundColor: "rgba(167, 139, 250, 0.4)", // Translucent lavender
+      border: "1px solid rgba(167, 139, 250, 0.8)",
+      borderRadius: "50%",
+    },
+    hovered: {
+      width: 56,
+      height: 56,
+      backgroundColor: "rgba(255, 255, 255, 1)", // Pure solid white for full inversion
+      border: "0px solid transparent",
+      borderRadius: "50%",
+    }
+  };
+
+  return (
+    <>
+      {/* Outer fluid physics cursor wrapper */}
+      <motion.div
+        className="fixed top-0 left-0 pointer-events-none z-[9999] mix-blend-difference -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+        animate={cursorType}
+        variants={variants}
+        style={{
+          x: cursorXSpring,
+          y: cursorYSpring,
+        }}
+        transition={{ type: "spring", stiffness: 400, damping: 28, mass: 0.2 }}
+      >
+        {/* If cursor type shifts to 'hover', render a subtle interactive focal text inside it */}
+        {cursorType === "hovered" && (
+          <motion.span 
+            initial={{ opacity: 0, scale: 0.6 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="text-[9px] font-bold text-black uppercase tracking-widest pointer-events-none select-none"
+          >
+            View
+          </motion.span>
+        )}
+      </motion.div>
+
+      {/* Tiny immediate pin center point to keep pointer spatial accuracy intact */}
+      <motion.div
+        className="fixed top-0 left-0 w-1.5 h-1.5 bg-mint rounded-full pointer-events-none z-[10000] -translate-x-1/2 -translate-y-1/2 mix-blend-screen"
+        style={{
+          x: cursorX,
+          y: cursorY,
+        }}
+      />
+    </>
+  );
+};
+
+export default CustomCursor;
 ================================================================================
 
 
@@ -949,9 +1090,9 @@ Language: jsx
 Location: src/components/Marquee.jsx
 Relative Path: src/components
 Created: 2025-11-20 20:45:46 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 12:59:48 (Asia/Calcutta / GMT+06:30)
-MD5: 2792c59fc95bd60d8c51e53ed36cf81c
-SHA256: 2722022cc7eedaeef3dc7bfaa8c57d8b9dd89e25becfde9aa528457905447bd1
+Modified: 2026-06-04 20:15:48 (Asia/Calcutta / GMT+06:30)
+MD5: d4ec6612babfc46569acaa2bac2c6272
+SHA256: 61983846212ee004653f9e102959c541ad9e847f3be19f5e27605a2999db0740
 Encoding: ASCII
 
 FILE CONTENT:
@@ -971,7 +1112,7 @@ export function Marquee({
     <div
       {...props}
       className={twMerge(
-        `group flex [gap:var(--gap)] overflow-hidden p-2 [--duration:40s] [--gap:1rem] ${vertical ? 'flex-col' : 'felx-row'}`,
+        `group flex [gap:var(--gap)] overflow-hidden p-2 [--duration:40s] [--gap:1rem] ${vertical ? 'flex-col' : 'flex-row'}`,
         className
       )}
     >
@@ -1468,44 +1609,59 @@ FILE: src/components/Project.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.3 KB
+Size: 1.96 KB
 Extension: .jsx
 Language: jsx
 Location: src/components/Project.jsx
 Relative Path: src/components
 Created: 2025-11-19 20:28:53 (Asia/Calcutta / GMT+06:30)
-Modified: 2026-06-03 20:38:31 (Asia/Calcutta / GMT+06:30)
-MD5: 8a69cb0f11b73fc1fb93c062536af3d6
-SHA256: e771c471f016498be6d1869c6b93668a946c208be819c3bfb0b6f5fe645b0300
+Modified: 2026-06-04 20:35:14 (Asia/Calcutta / GMT+06:30)
+MD5: edc1278fd63aeb1e9627e015c2b854be
+SHA256: 0193597e111d011cea23017a8d8ebe9e8f820e3cbf4e84b5f746344b46c0135a
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
 import { useState } from "react"
+import { AnimatePresence, motion } from "motion/react"
 import ProjectDetails from "./ProjectDetails"
 
-const Project = ({title,description,subDescription,href,image,tags,setPreview}) => {
+const Project = ({ title, description, subDescription, href, image, tags, setPreview }) => {
     const [isHidden, setIsHidden] = useState(false);
-  return (
-    <>
-        <div className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0" onMouseEnter={()=>setPreview(image)} onMouseLeave={()=>setPreview(null)}>
-            <div>
-                <p className="text-2xl">{title}</p>
-                <div className="flex gap-5 mt-2 text-sand">
-                    {tags.map((tag)=>(<span key={tag.id}>{tag.name}</span>))}
+    return (
+        <>
+            <div className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0" onMouseEnter={() => setPreview(image)} onMouseLeave={() => setPreview(null)}>
+                <div>
+                    <p className="text-2xl">{title}</p>
+                    <div className="flex gap-5 mt-2 text-sand">
+                        {tags.map((tag) => (<span key={tag.id}>{tag.name}</span>))}
+                    </div>
                 </div>
+                <button onClick={() => {
+                    setIsHidden(true);
+                    setPreview(null);
+                }} className="flex items-center gap-1 cursor-pointer hover-animation">
+                    Read More
+                    <img src='assets/arrow-right.svg' className="w-5" />
+                </button>
             </div>
-            <button onClick={()=>{setIsHidden(true);
-                setPreview(null);
-            }} className="flex items-center gap-1 cursor-pointer hover-animation">
-                Read More
-                <img src='assets/arrow-right.svg' className="w-5"/>
-            </button>      
-        </div>
-        <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full"/>
-        {isHidden && (<ProjectDetails title={title} description={description} subDescription={subDescription} image={image} tags={tags} href={href} closeModal={()=>setIsHidden(false)}/>)}
-    </>
-  )
+            <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
+            {/* {isHidden && (<ProjectDetails title={title} description={description} subDescription={subDescription} image={image} tags={tags} href={href} closeModal={()=>setIsHidden(false)}/>)} */}
+            <AnimatePresence>
+                {isHidden && (
+                    <ProjectDetails
+                        title={title}
+                        description={description}
+                        subDescription={subDescription}
+                        image={image}
+                        tags={tags}
+                        href={href}
+                        closeModal={() => setIsHidden(false)}
+                    />
+                )}
+            </AnimatePresence>
+        </>
+    )
 }
 
 export default Project
@@ -1519,52 +1675,111 @@ FILE: src/components/ProjectDetails.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.81 KB
+Size: 5.05 KB
 Extension: .jsx
 Language: jsx
 Location: src/components/ProjectDetails.jsx
 Relative Path: src/components
 Created: 2025-11-19 20:59:26 (Asia/Calcutta / GMT+06:30)
-Modified: 2026-06-03 20:38:25 (Asia/Calcutta / GMT+06:30)
-MD5: 9d3c3269a8fd4b3b1dee8d80130a4caf
-SHA256: f2ecf1a0c100ca674f9770625fad12285bf0adf3cc66982f537bd36edc751755
+Modified: 2026-06-04 20:31:05 (Asia/Calcutta / GMT+06:30)
+MD5: 902e6d8f23e552ff258f8a4e52e05edb
+SHA256: f9f0fb2119158730bd72540fd4bc8d31489e3bb4efd0dcb596532db6d9429edc
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-import {motion} from 'motion/react';
+// import {motion} from 'motion/react';
+
+// const BASE_URL = import.meta.env.BASE_URL;
+// const resolveAssetUrl = (path) => path?.startsWith("/") ? path : `${BASE_URL}${path}`;
+
+// const ProjectDetails = ({title, description, subDescription, image, tags, href,closeModal}) => {
+//   return (
+//     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
+//       <motion.div className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10" initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}}>
+//         <button onClick={closeModal} className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500">
+//             <img src={resolveAssetUrl('assets/close.svg')} className="w-6 h-6"/>
+//         </button>
+//         <img src={resolveAssetUrl(image)} alt={title} className="w-full rounded-t-2xl"/>
+//         <div className="p-5">
+//             <h5 className="mb-2 text-2xl font-bold text-white ">{title}</h5>
+//             <p className="mb-3 font-normal text-neutral-400">{description}</p>
+//             {subDescription.map((subDesc,index)=>(<p key={index} className="mb-3 font-normal text-neutral-400">{subDesc}</p>))}
+//         </div>
+//         <div className="flex items-center justify-between mt-4">
+//             <div className="flex gap-3">
+//                 {tags.map((tag)=>(<img key={tag.id} src={resolveAssetUrl(tag.path)} alt={tag.name} className="rounded-lg size-10 hover-animation"/>))}
+//             </div>
+//             <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"href={href}>
+//                 View Project <img src={resolveAssetUrl('assets/arrow-up.svg')} className="size-4" />
+//             </a>
+//         </div>
+//       </motion.div>
+//     </div>
+//   )
+// }
+
+// export default ProjectDetails
+
+
+import { motion } from 'motion/react';
 
 const BASE_URL = import.meta.env.BASE_URL;
 const resolveAssetUrl = (path) => path?.startsWith("/") ? path : `${BASE_URL}${path}`;
 
-const ProjectDetails = ({title, description, subDescription, image, tags, href,closeModal}) => {
+const ProjectDetails = ({ title, description, subDescription, image, tags, href, closeModal }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
-      <motion.div className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10" initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}}>
-        <button onClick={closeModal} className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500">
-            <img src={resolveAssetUrl('assets/close.svg')} className="w-6 h-6"/>
+    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full p-4 overflow-hidden backdrop-blur-md bg-black/40">
+      {/* Backdrop Click Dismissal */}
+      <div className="absolute inset-0" onClick={closeModal} />
+
+      <motion.div 
+        className="relative w-full max-w-2xl border shadow-2xl rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10 overflow-y-auto max-h-[90vh] z-10 p-6"
+        initial={{ opacity: 0, y: 30, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 30, scale: 0.95 }}
+        transition={{ type: "spring", damping: 25, stiffness: 350 }}
+      >
+        <button onClick={closeModal} className="absolute p-2 rounded-xl top-4 right-4 bg-midnight/80 border border-white/10 hover:bg-neutral-800 transition-colors cursor-pointer z-20">
+          <img src={resolveAssetUrl('assets/close.svg')} className="w-5 h-5" alt="close"/>
         </button>
-        <img src={resolveAssetUrl(image)} alt={title} className="w-full rounded-t-2xl"/>
-        <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold text-white ">{title}</h5>
-            <p className="mb-3 font-normal text-neutral-400">{description}</p>
-            {subDescription.map((subDesc,index)=>(<p key={index} className="mb-3 font-normal text-neutral-400">{subDesc}</p>))}
+
+        <img src={resolveAssetUrl(image)} alt={title} className="w-full h-auto rounded-xl object-cover mb-6 border border-white/5" />
+   
+        <div>
+          <h5 className="mb-3 text-2xl font-bold text-white tracking-tight">{title}</h5>
+          <p className="mb-4 font-normal text-neutral-300 leading-relaxed">{description}</p>
+          <div className="space-y-2 mb-6">
+            {subDescription.map((subDesc, index) => (
+              <p key={index} className="text-sm font-normal text-neutral-400 flex items-start gap-2">
+                <span className="text-lavender mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-lavender" />
+                {subDesc}
+              </p>
+            ))}
+          </div>
         </div>
-        <div className="flex items-center justify-between mt-4">
-            <div className="flex gap-3">
-                {tags.map((tag)=>(<img key={tag.id} src={resolveAssetUrl(tag.path)} alt={tag.name} className="rounded-lg size-10 hover-animation"/>))}
-            </div>
-            <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"href={href}>
-                View Project <img src={resolveAssetUrl('assets/arrow-up.svg')} className="size-4" />
-            </a>
+
+        <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/5">
+          <div className="flex gap-2">
+            {tags.map((tag) => (
+              <div key={tag.id} className="relative group/tag">
+                <img src={resolveAssetUrl(tag.path)} alt={tag.name} className="rounded-lg size-9 p-1.5 bg-white/5 border border-white/10 hover-animation" />
+                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-neutral-900 text-[10px] text-white px-2 py-0.5 rounded opacity-0 group-hover/tag:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-white/10">
+                  {tag.name}
+                </span>
+              </div>
+            ))}
+          </div>
+          <a className="inline-flex items-center gap-1.5 font-semibold text-sm bg-radial from-lavender to-royal px-4 py-2 rounded-xl cursor-pointer hover-animation shadow-md shadow-royal/20" href={href} target="_blank" rel="noreferrer">
+            View Project <img src={resolveAssetUrl('assets/arrow-up.svg')} className="size-3.5 invert" />
+          </a>
         </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectDetails
-
+export default ProjectDetails;
 ================================================================================
 
 
@@ -1668,19 +1883,21 @@ FILE: src/constants/index.js
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 9.03 KB
+Size: 4.61 KB
 Extension: .js
 Language: javascript
 Location: src/constants/index.js
 Relative Path: src/constants
 Created: 2025-11-19 20:21:58 (Asia/Calcutta / GMT+06:30)
-Modified: 2026-06-03 20:29:30 (Asia/Calcutta / GMT+06:30)
-MD5: 2ec758f153835c821e7a744e1eaa6bc6
-SHA256: c58bf05b0118b63b0be4026790a3ab5c3440847adbb293e5b496bd8e0c5bb054
+Modified: 2026-06-04 20:12:10 (Asia/Calcutta / GMT+06:30)
+MD5: 21bf053fefe52ca046cd2b82a039c8cd
+SHA256: e1b32bc9930162f86e83b62b0912edcf19aa8055f5538e926a56d94ee989c36c
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
+// 
+
 export const myProjects = [
   {
     id: 1,
@@ -1694,29 +1911,12 @@ export const myProjects = [
       "Integrates the OpenAI GPT-4o model for AI-powered query translation.",
     ],
     href: "https://github.com/Gyan-Aditya/SQL-Query-Generator",
-    logo: "",
     image: "/assets/projects/Query.png",
     tags: [
-      {
-        id: 1,
-        name: "Node.js",
-        path: "/assets/logos/Node.js.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "Express",
-        path: "/assets/logos/Express.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "Node.js", path: "/assets/logos/Node.js.svg" },
+      { id: 2, name: "React", path: "/assets/logos/react.svg" },
+      { id: 3, name: "Express", path: "/assets/logos/Express.svg" },
+      { id: 4, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     ],
   },
   {
@@ -1731,135 +1931,30 @@ export const myProjects = [
       "Integrated Razorpay payment gateway for seamless, secure bill payments directly within the app.",
     ],
     href: "https://splitter-weog.onrender.com/login",
-    logo: "",
     image: "/assets/projects/splitter.png",
     tags: [
-      {
-        id: 1,
-        name: "Node.js",
-        path: "/assets/logos/Node.js.svg",
-      },
-      {
-        id: 2,
-        name: "EJS",
-        path: "/assets/logos/ejs.svg",
-      },
-      {
-        id: 3,
-        name: "Express",
-        path: "/assets/logos/Express.svg",
-      },
-      {
-        id: 4,
-        name: "PostgreSQL",
-        path: "/assets/logos/postgresql.svg",
-      },
+      { id: 1, name: "Node.js", path: "/assets/logos/Node.js.svg" },
+      { id: 2, name: "EJS", path: "/assets/logos/ejs.svg" },
+      { id: 3, name: "Express", path: "/assets/logos/Express.svg" },
+      { id: 4, name: "PostgreSQL", path: "/assets/logos/postgresql.svg" },
     ],
   },
   {
     id: 3,
-    title: "Audio Classification",
+    title: "Audio Classification Platform",
     description:
-      "A machine learning model for classifying environmental sounds, built using TensorFlow/Keras and deployed as a user-friendly web interface with Streamlit.",
+      "A machine learning pipeline for classifying environmental sounds, built using TensorFlow/Keras and deployed as an interactive web interface with Streamlit.",
     subDescription: [
-      "The model classifies various sounds (e.g., Dog Bark, Siren, Gunshot) from the UrbanSound8K dataset.",
-      "Utilizes MFCC (Mel-Frequency Cepstral Coefficients) for robust audio feature extraction and processing.",
-      "Trained using a deep learning model (ANN/MLP) implemented in TensorFlow/Keras.",
-      "Deployed using the Streamlit framework for an interactive, web-based user experience (run via `streamlit run app.py`).",
+      "Classifies various environmental sounds from the UrbanSound8K dataset using an optimized deep learning MLP architecture.",
+      "Utilizes MFCC (Mel-Frequency Cepstral Coefficients) for robust audio feature extraction and processing pipeline.",
+      "Trained using TensorFlow/Keras and deployed cleanly with Streamlit for real-time user file inference.",
     ],
     href: "https://github.com/Gyan-Aditya/Audio_classification",
-    logo: "",
     image: "/assets/projects/audio.png",
     tags: [
-      {
-        id: 1,
-        name: "Python",
-        path: "/assets/logos/Python.svg",
-      },
-      {
-        id: 2,
-        name: "TensorFlow",
-        path: "/assets/logos/TensorFlow.svg",
-      },
-      {
-        id: 3,
-        name: "Streamlit",
-        path: "/assets/logos/Streamlit.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Modern, Secure, and Feature-Rich Blogging Platform",
-    description:
-      "A full-stack blogging application that allows users to create, read, update, and delete their own posts, featuring robust authentication and protected routes.",
-    subDescription: [
-      "Built on a full-stack architecture using Node.js/Express.js with EJS (Embedded JavaScript Templating) for server-side rendered views.",
-      "Uses MongoDB as the database, interfaced with Mongoose for data persistence.",
-      "Implemented secure authentication and authorization using JSON Web Tokens (JWT) and Salt for password hashing.",
-      "Provides complete CRUD (Create, Read, Update, Delete) functionality for blog posts.",
-    ],
-    href: "https://github.com/Gyan-Aditya/Blog",
-    logo: "",
-    image: "/assets/projects/Blog.png",
-    tags: [
-      {
-        id: 1,
-        name: "Node.js",
-        path: "/assets/logos/Node.js.svg",
-      },
-      {
-        id: 2,
-        name: "MongoDB",
-        path: "/assets/logos/MongoDB.svg",
-      },
-      {
-        id: 3,
-        name: "Express",
-        path: "/assets/logos/Express.svg",
-      },
-      {
-        id: 4,
-        name: "EJS",
-        path: "/assets/logos/ejs.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "URL Shortener Application",
-    description:
-      "A full-stack web service designed to convert long, complex Uniform Resource Locators (URLs) into short, manageable links, and manage the corresponding redirects.",
-    subDescription: [
-      "The entire application is built on a Node.js backend using the Express.js framework.",
-      "Data persistence is managed using a MongoDB database (indicated by `connection.js` and standard architecture).",
-      "The user interface is rendered using EJS (Embedded JavaScript Templating), making it a server-side rendered application.",
-      "Core functionality includes generating a unique short ID for any input URL and immediately redirecting users from the short link back to the original long URL.",
-    ],
-    href: "https://github.com/Gyan-Aditya/URL-Shortener/",
-    logo: "",
-    image: "/assets/projects/url.png",
-    tags: [
-      {
-        id: 1,
-        name: "Node.js",
-        path: "/assets/logos/Node.js.svg",
-      },
-      {
-        id: 2,
-        name: "MongoDB",
-        path: "/assets/logos/MongoDB.svg",
-      },
-      {
-        id: 3,
-        name: "Express",
-        path: "/assets/logos/Express.svg",
-      },
-      {
-        id: 4,
-        name: "EJS",
-        path: "/assets/logos/ejs.svg",
-      },
+      { id: 1, name: "Python", path: "/assets/logos/Python.svg" },
+      { id: 2, name: "TensorFlow", path: "/assets/logos/TensorFlow.svg" },
+      { id: 3, name: "Streamlit", path: "/assets/logos/Streamlit.svg" },
     ],
   },
 ];
@@ -1875,94 +1970,43 @@ export const mySocials = [
     href: "https://www.linkedin.com/in/gyan-aditya-58b46a2a8/",
     icon: "/assets/socials/linkedIn.svg",
   },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/gyan__aditya/",
-    icon: "/assets/socials/instagram.svg",
-  },
 ];
 
 export const educations = [
   {
     institute: "Kalinga Institute of Industrial Technology (KIIT)",
     degree: "Bachelor of Technology",
-    date: "2022-2026",
+    date: "2022 - 2026",
     contents: [
-      "Location-: Bhubaneswar, Odisha, India",
-      "Field of study-: Computer Science and Engineering",
-      "CGPA-: 8.51/10",
+      "Location: Bhubaneswar, Odisha, India",
+      "Field of Study: Computer Science and Engineering",
+      "Academic Performance: 8.51 / 10 CGPA",
     ],
   },
   {
-    institute: "Litera Valley",
-    degree: "Class 11th and 12th",
-    date: "2020-2022",
+    institute: "Litera Valley School",
+    degree: "Class XI & XII (CBSE)",
+    date: "2020 - 2022",
     contents: [
-      "Board-: Central Board of Secondary Education (CBSE)",
-      "Location-: Patna, Bihar, India",
-      "Major subjects-: Physics, Chemistry, Mathematics, Computer Science",
-      "12th Percentage-: 82%",
-    ],
-  },
-  {
-    institute: "Open Minds A Birla School",
-    degree: "Class 10th",
-    date: "2019-2020",
-    contents: [
-      "Board-: Central Board of Secondary Education (CBSE)",
-      "Location-: Patna, Bihar, India",
-      "Percentage-: 90.83%",
+      "Location: Patna, Bihar, India",
+      "Major: Physics, Chemistry, Mathematics, Computer Science",
+      "Aggregate: 82%",
     ],
   },
 ];
+
 export const reviews = [
   {
     name: "Aishwarya Nidhi",
     company: "D1g1t",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    body: "Exceptional engineering mindset. Gyan turns intricate ideas into modular, production-ready full-stack layouts cleanly.",
     img: "https://robohash.org/jack",
   },
   {
-    name: "Dipen Solanki",
-    company: "Solace",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
-  },
-  {
-    name: "Gautam Priyadarshi Attry",
+    name: "Gautam Priyadarshi",
     company: "Optum",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    body: "Detail-oriented dev with a fantastic grip on logic architectures, data pipelines, and foundational problem-solving.",
     img: "https://robohash.org/john",
-  },
-  {
-    name: "Dev Krishn",
-    company: "Capgemini",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
-  },
-  {
-    name: "Priyanshu Kumar",
-    company: "GS labs",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
-  },
-  {
-    name: "Aryan Raj",
-    company: "Zomato",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
-  },
-  {
-    name: "Ritu Raj",
-    company: "Delloite",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
-  },
-  {
-    name: "Prince Kumar",
-    company: "Softhub Technologies",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
   },
 ];
 ================================================================================
@@ -1974,91 +2018,306 @@ FILE: src/sections/About.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 4.42 KB
+Size: 13.76 KB
 Extension: .jsx
 Language: jsx
 Location: src/sections/About.jsx
 Relative Path: src/sections
 Created: 2025-11-19 09:42:32 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 21:26:15 (Asia/Calcutta / GMT+06:30)
-MD5: 2b01d8f2a1908f3065d32c200b3d9230
-SHA256: 374152d909738b846875f402bac192d6f8cd175ffca87cc7e620d7db7daeb6df
+Modified: 2026-06-04 21:31:24 (Asia/Calcutta / GMT+06:30)
+MD5: fc35126bbe04161babde1c5443d7e317
+SHA256: a0f2e37346f260f088fa688970b93243693d0ec382794139c67d2363462e6307
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-import { useRef } from "react";
-import Card from "../components/Card";
-import { Globe } from "../components/globe";
-import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/Frameworks";
+// 
 
-const About = () => {
-    const grid2Container= useRef();
+
+// import { useRef } from "react";
+// import { Globe } from "../components/globe";
+// import CopyEmailButton from "../components/CopyEmailButton";
+// import { Frameworks } from "../components/Frameworks";
+
+// const About = () => {
+//   return (
+//     <section id="about" className="c-space section-spacing">
+//       <h2 className="text-heading">About Me</h2>
+      
+//       <div className="grid grid-cols-1 gap-5 md:grid-cols-6 lg:grid-cols-6 mt-12 auto-rows-auto">
+        
+//         {/* Card 1: Bio Hero */}
+//         <div className="grid-default-color col-span-1 md:col-span-3 lg:col-span-4 p-8 flex flex-col justify-between min-h-[22rem] relative overflow-hidden group hover:-translate-y-1 duration-300">
+//           <div className="absolute -right-10 -top-10 w-40 h-40 bg-royal/10 rounded-full blur-3xl pointer-events-none" />
+//           <div className="z-10">
+//             <span className="text-xs font-semibold uppercase tracking-widest text-lavender bg-lavender/10 px-3 py-1 rounded-full">
+//               Introduction
+//             </span>
+//             <h3 className="text-2xl font-bold text-white mt-6 mb-4">Hi, I'm Gyan Aditya</h3>
+//             <p className="subtext text-base leading-relaxed max-w-2xl">
+//               A software developer completing a B.Tech in Computer Science and Engineering at KIIT[cite: 151]. 
+//               I specialize in breaking down complex data structures and building back architecture that scales efficiently. 
+//               From algorithm optimization to deep backend design, I treat programming as a precise craft.
+//             </p>
+//           </div>
+//           <div className="mt-6 flex flex-wrap gap-3 z-10">
+//             <div className="bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm">
+//               🎓 KIIT CSE '26 [cite: 151]
+//             </div>
+//             <div className="bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-sm text-mint font-medium">
+//               💼 Accenture Placed (ASE)
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Card 2: Strategic Pillars */}
+//         <div className="grid-default-color col-span-1 md:col-span-3 lg:col-span-2 p-8 flex flex-col justify-between min-h-[22rem] hover:-translate-y-1 duration-300">
+//           <div>
+//             <span className="text-xs font-semibold uppercase tracking-widest text-sand bg-sand/10 px-3 py-1 rounded-full">
+//               Core Principles
+//             </span>
+//             <h4 className="text-lg font-bold mt-6 mb-3">Architectural Focus</h4>
+//             <ul className="space-y-3">
+//               {["Modular Clean Code", "Algorithmic Efficiency (DSA)", "Object Oriented Design (OOPS)", "Secure Access Protocols"].map((item, idx) => (
+//                 <li key={idx} className="flex items-center gap-2 text-sm text-neutral-400">
+//                   <span className="w-1.5 h-1.5 bg-lavender rounded-full" />
+//                   {item}
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//           <p className="text-2xl font-black text-white/5 select-none self-end tracking-wider">
+//             SYSTEM DESIGN
+//           </p>
+//         </div>
+
+//         {/* Card 3: Dynamic Tech Stack */}
+//         <div className="grid-default-color col-span-1 md:col-span-4 lg:col-span-4 p-8 min-h-[22rem] relative overflow-hidden flex flex-col justify-between hover:-translate-y-1 duration-300">
+//           <div className="z-10 max-w-md">
+//             <span className="text-xs font-semibold uppercase tracking-widest text-mint bg-mint/10 px-3 py-1 rounded-full">
+//               Capabilities
+//             </span>
+//             <h4 className="text-xl font-bold mt-6 mb-2">Technical Core</h4>
+//             <p className="subtext text-sm">
+//               Fluent across systems programming, client layouts, machine learning models, and standard operations management platforms.
+//             </p>
+//           </div>
+//           <div className="w-full relative h-[12rem] flex items-center justify-center mt-4">
+//             <div className="absolute inset-0 scale-90 md:scale-100">
+//               <Frameworks />
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Card 4: Global Availability */}
+//         <div className="grid-black-color col-span-1 md:col-span-2 lg:col-span-2 p-8 min-h-[22rem] flex flex-col justify-between relative overflow-hidden hover:-translate-y-1 duration-300 [contain:content]">
+//           <div className="z-10">
+//             <span className="text-xs font-semibold uppercase tracking-widest text-neutral-400 bg-neutral-800 px-3 py-1 rounded-full">
+//               Location
+//             </span>
+//             <h4 className="text-lg font-bold mt-6 mb-2">Based in India</h4>
+//             <p className="subtext text-xs">Open to worldwide engineering roles.</p>
+//           </div>
+          
+//           <div className="absolute -bottom-20 -right-20 w-64 h-64 opacity-80 pointer-events-none">
+//             <Globe />
+//           </div>
+//         </div>
+
+//         {/* Card 5: Collaboration Call to Action */}
+//         <div className="grid-special-color col-span-1 md:col-span-6 p-10 text-center flex flex-col items-center justify-center gap-4 min-h-[14rem] hover:-translate-y-1 duration-300">
+//           <h3 className="text-2xl font-bold text-white max-w-lg">
+//             Let's build reliable software systems together.
+//           </h3>
+//           <p className="text-white/70 text-sm max-w-md -mt-1">
+//             Currently accepting corporate project inquiries and engineering opportunities.
+//           </p>
+//           <div className="mt-2">
+//             <CopyEmailButton />
+//           </div>
+//         </div>
+
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default About;
+
+import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { Particles } from "../components/Particles";
+
+const Hero = () => {
+  const [code, setCode] = useState(
+`import portfolio as pf
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.models import Sequential
+
+# 1. Initialize Gyan Aditya Profile Model
+model = pf.GyanOS(cgpa=8.51, placement="Accenture")
+
+# 2. Run target prediction query
+# Options: "about", "projects", "education", "contact"
+model.predict(target="about")`
+  );
+
+  const [consoleLogs, setConsoleLogs] = useState([
+    "Python 3.10.12 runtime initialized.",
+    "TensorFlow 2.15.0 successfully hooked.",
+    "Ready for execution. Click 'Run Code' or change the target parameter.",
+  ]);
+  const [isRunning, setIsRunning] = useState(false);
+  const consoleEndRef = useRef(null);
+
+  useEffect(() => {
+    consoleEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [consoleLogs]);
+
+  const runMLCode = () => {
+    setIsRunning(true);
+    setConsoleLogs((prev) => [...prev, ">>> Running script..."]);
+
+    // Simple parsing logic to read the user's input target string parameter dynamically
+    const targetMatch = code.match(/target=["']([^"']+)["']/);
+    const targetSection = targetMatch ? targetMatch[1].toLowerCase().trim() : "about";
+
+    setTimeout(() => {
+      setConsoleLogs((prev) => [
+        ...prev,
+        "Epoch 1/3: loss: 0.0412 - accuracy: 0.9420",
+        "Epoch 2/3: loss: 0.0102 - accuracy: 0.9850",
+        "Epoch 3/3: loss: 0.0024 - accuracy: 0.9981",
+        `[SUCCESS] Model converged on classification route: /${targetSection}`,
+        `Redirecting system layer to section: ${targetSection}...`
+      ]);
+      
+      setIsRunning(false);
+
+      // Trigger smooth scroll mapping anchors cleanly after the training epoch visualization loops
+      setTimeout(() => {
+        const targetElement = document.getElementById(targetSection);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        } else {
+          setConsoleLogs((prev) => [...prev, `[ERROR] Runtime warning: Anchor link ID '#${targetSection}' not found.`]);
+        }
+      }, 1000);
+
+    }, 1500);
+  };
+
   return (
-    <section id="about" className="c-space section-spacing">
-        <h2 className="text-heading">About me</h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12 ">
-            {/* Grid 1 */}
-            <div className="flex items-end grid-default-color grid-1">
-                <img src="assets/coding-pov.png" className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"/>
-                <div className="z-10">
-                    <p className='headtext'>Hi, I'm Gyan Aditya</p>
-                    <p className="subtext">A versatile 4th-year B.Tech Computer Science student adept at turning complex ideas into scalable solutions. I combine a strong technical foundation with practical skills across AI/ML, full-stack development, and data analytics, ready to contribute to innovative projects.</p>
-                </div>
-                <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"/>
+    <section id="home" className="relative w-full h-screen bg-[#020410] flex items-center justify-center font-mono p-4 overflow-hidden">
+      <Particles className="absolute inset-0 opacity-15" quantity={80} color="#fbbf24" />
+
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.98 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="relative z-10 w-full max-w-6xl h-[80vh] md:h-[680px] bg-[#070a22]/80 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+      >
+        {/* Workspace Toolbar Controls */}
+        <div className="w-full bg-white/5 border-b border-white/10 px-6 py-4 flex items-center justify-between flex-wrap gap-4">
+          <div className="flex items-center gap-3">
+            <div className="flex gap-1.5">
+              <div className="w-3 h-3 rounded-full bg-red-500/40" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500/40" />
+              <div className="w-3 h-3 rounded-full bg-green-500/40" />
             </div>
-            {/* Grid 2 */}
-            <div className="grid-default-color grid-2">
-                <div ref={grid2Container} className='flex items-center justify-center w-full h-full'>
-                    <p className="flex items-end text-5xl text-gray-500">
-                        CODE IS CRAFT
-                    </p>
-                    <Card style={{rotate: "75deg", top:"30%", left:"20%"}} text="DSA" containerRef={grid2Container}/>
-                    <Card style={{rotate: "-30deg", top:"60%", left:"45%"}} text="OOPS" containerRef={grid2Container}/>
-                    <Card style={{rotate: "90deg", bottom:"30%", left:"70%"}} text="DBMS" containerRef={grid2Container}/>
-                    <Card style={{rotate: "-45deg", top:"55%", left:"0%"}} text="SDLC" containerRef={grid2Container}/>
-                    <Card style={{rotate: "20deg", top:"10%", left:"38%"}} text="Mircoservices" containerRef={grid2Container}/>
-                    <Card style={{rotate: "30deg", top:"70%", left:"70%"}} image="assets/logos/Three.js.png" containerRef={grid2Container}/>
-                    <Card style={{rotate: "-45deg", top:"70%", left:"25%"}} image="assets/logos/VS-Code.png" containerRef={grid2Container}/>
-                    <Card style={{rotate: "-45deg", top:"5%", left:"10%"}} image="assets/logos/Kubernetes.png" containerRef={grid2Container}/>
-                </div>
-            </div>
-            {/* Grid 3 */}
-            <div className="grid-black-color grid-3">
-                <div className='z-10 w-[50%]'>
-                    <p className="headtext">Time zone</p>
-                    <p className='subtext'>I'm based in India, and open to remote, hybrid and in-office work worlwide</p>
-                </div>
-                <figure className="absolute left-[30%] top-[10%]">
-                    <Globe/>
-                </figure>
-            </div>
-            {/* Grid 4 */}
-            <div className="grid-special-color grid-4">
-                <div className="flex flex-col items-center justify-center gap-4 size-full">
-                    <p className="text-center headtext">Do you want to start a project together?</p>
-                    <CopyEmailButton/>
-                </div>
-            </div>
-            {/* Grid 5 */}
-            <div className="grid-default-color grid-5">
-                <div className="z-10 w-[50%]">
-                    <p className="headtext">Tech Stack</p>
-                    <p className="subtext hidden md:block">From syntax to scale, I master the spectrum. I wield a versatile arsenal of languages, frameworks, and tools to design and deploy robust, high-performance applications.</p>
-                    <p className="subtext md:hidden">I wield a versatile arsenal of languages, frameworks, and tools to design and deploy robust, high-performance applications.</p>
-                </div>
-                <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
-                    <Frameworks/>
-                </div>
-            </div>
+            <span className="text-xs font-bold text-neutral-400 bg-white/5 px-2.5 py-1 rounded border border-white/5">
+              📂 gyan_model_training.ipynb
+            </span>
+          </div>
+
+          <button
+            onClick={runMLCode}
+            disabled={isRunning}
+            className={`px-5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer border shadow-lg ${
+              isRunning 
+                ? "bg-amber-500/10 text-amber-400 border-amber-500/30" 
+                : "bg-radial from-amber-400 to-amber-600 text-black border-transparent font-black shadow-amber-500/10 hover:scale-[1.02]"
+            }`}
+          >
+            {isRunning ? (
+              <>
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
+                Fitting Model...
+              </>
+            ) : (
+              <>▶ Run Python Script</>
+            )}
+          </button>
         </div>
+
+        {/* IDE Split View Workspace Layout */}
+        <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 overflow-hidden">
+          
+          {/* Left Panel: Python Script Textarea Editor */}
+          <div className="lg:col-span-7 flex flex-col p-4 bg-black/20 border-r border-white/5 relative">
+            <div className="text-[10px] text-neutral-500 font-bold uppercase tracking-wider mb-2 pl-2">
+              In [1]: Interactive Code Window
+            </div>
+            <div className="flex gap-4 flex-1 items-stretch">
+              <div className="text-neutral-700 text-xs text-right select-none pr-2 hidden sm:block pt-1 leading-relaxed">
+                {Array.from({ length: 11 }).map((_, i) => <p key={i}>{i + 1}</p>)}
+              </div>
+              <textarea
+                value={code}
+                onChange={(e) => setCode(e.target.value)}
+                spellCheck="false"
+                className="flex-1 bg-transparent border-none outline-none text-neutral-200 font-mono text-xs md:text-sm resize-none leading-relaxed focus:ring-0 whitespace-pre scrollbar-none"
+              />
+            </div>
+          </div>
+
+          {/* Right Panel: Active Compilation Model Outputs */}
+          <div className="lg:col-span-5 bg-black/40 p-5 flex flex-col justify-between overflow-y-auto">
+            <div className="flex-1 flex flex-col">
+              <div className="text-[10px] text-amber-400 font-bold uppercase tracking-widest mb-3 border-b border-white/5 pb-2 flex items-center justify-between">
+                <span>Out [1]: Evaluation Logs</span>
+                <span className="text-neutral-500 font-mono">Accuracy Tracker</span>
+              </div>
+              
+              <div className="space-y-2 text-xs text-neutral-300 font-mono leading-relaxed max-h-[360px] overflow-y-auto">
+                {consoleLogs.map((log, idx) => {
+                  let logClass = "text-neutral-400";
+                  if (log.startsWith(">>>") || log.startsWith(">")) logClass = "text-amber-300 font-bold";
+                  if (log.startsWith("[SUCCESS]")) logClass = "text-mint font-bold";
+                  if (log.startsWith("Epoch")) logClass = "text-lavender/90";
+                  return <p key={idx} className={logClass}>{log}</p>;
+                })}
+                <div ref={consoleEndRef} />
+              </div>
+            </div>
+
+            {/* Quick Context Reference Sheet Block */}
+            <div className="mt-4 pt-4 border-t border-white/5 text-[10px] text-neutral-500 space-y-1">
+              <p className="font-bold text-neutral-400 uppercase tracking-tight">Active Context Bindings:</p>
+              <p>• cgpa_matrix = <span className="text-amber-400 font-bold">8.51</span> (KIIT CSE Registry)</p>
+              <p>• destination_targets = [<span className="text-neutral-300">"about", "projects", "education", "contact"</span>]</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Console Execution Status Bar Footer */}
+        <div className="w-full bg-[#040616] border-t border-white/10 px-6 py-2 flex items-center justify-between text-[10px] text-neutral-500">
+          <div className="flex gap-4">
+            <span className="text-amber-400 font-semibold">● Kernel: Idle</span>
+            <span>Memory Array Alloc: 12.4 MB</span>
+          </div>
+          <span>UTF-8 | LF | Python (DataScience Env)</span>
+        </div>
+      </motion.div>
+
+      {/* Backdrop Ambient Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-[140px] pointer-events-none" />
     </section>
-  )
-}
+  );
+};
 
-export default About;
-
+export default Hero;
 ================================================================================
 
 
@@ -2175,7 +2434,7 @@ Language: jsx
 Location: src/sections/Educations.jsx
 Relative Path: src/sections
 Created: 2025-11-20 18:00:31 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-20 19:05:35 (Asia/Calcutta / GMT+06:30)
+Modified: 2026-06-04 20:42:08 (Asia/Calcutta / GMT+06:30)
 MD5: cd4f8d299eadb65a75ab388cddd7c9fd
 SHA256: f3889a34538d5ecb9cb5cf4121b36fa00969c1e9b0d5ab8139619d4badd4f3bf
 Encoding: ASCII
@@ -2252,57 +2511,291 @@ FILE: src/sections/Hero.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.31 KB
+Size: 13.18 KB
 Extension: .jsx
 Language: jsx
 Location: src/sections/Hero.jsx
 Relative Path: src/sections
 Created: 2025-11-18 18:57:02 (Asia/Calcutta / GMT+06:30)
-Modified: 2026-06-03 20:48:27 (Asia/Calcutta / GMT+06:30)
-MD5: 21b2da8715f584eb022931f46b47177e
-SHA256: 3638130b516a0d9bc6cf564a4f4bd2cfe66445fc3a9e0a4c3672d413240bc1ba
+Modified: 2026-06-04 21:27:39 (Asia/Calcutta / GMT+06:30)
+MD5: 1400df81045d53ecca93e93678320800
+SHA256: 27c88419e0f080e3296ab496131db085ea3adc504a371debe8e2dac0b299a31b
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-import { Canvas, useFrame } from "@react-three/fiber"
-import HeroText from "../components/HeroText"
-import ParallaxBackground from "../components/ParallaxBackground"
-import { Astronaut } from "../components/Astronaut"
-import { Float } from "@react-three/drei"
-import { easing } from "maath"
-import { useMediaQuery } from "react-responsive"
-import { Suspense } from "react"
-import Loader from "../components/Loader"
+// import { Canvas, useFrame } from "@react-three/fiber"
+// import HeroText from "../components/HeroText"
+// import ParallaxBackground from "../components/ParallaxBackground"
+// import { Astronaut } from "../components/Astronaut"
+// import { Float } from "@react-three/drei"
+// import { easing } from "maath"
+// import { useMediaQuery } from "react-responsive"
+// import { Suspense } from "react"
+// import Loader from "../components/Loader"
+
+// const Hero = () => {
+//     const isMobile =useMediaQuery({maxWidth:853});
+//   return (
+//     <section id="home" className='flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space'>
+//         <HeroText/>
+//         <ParallaxBackground/>
+//         <figure className="absolute inset-0" style={{width: "100vw", height:"100vh"}}>
+//             <Canvas camera={{position:[0,1,3]}}>
+//                 <Suspense fallback={<Loader/>}>
+//                 <Float>
+//                  <Astronaut scale={isMobile && 0.23} position={isMobile && [0,-1.5,0]}/>
+//                 </Float>
+//                 <Rig/>
+//                 </Suspense>
+//             </Canvas>
+//         </figure>
+//     </section>
+//   )
+// }
+
+// function Rig(){
+//     return useFrame((state,delta)=>{
+//         easing.damp3(state.camera.position,[state.mouse.x/10,1+state.mouse.y/10,3],0.5,delta);
+//     });
+// }
+
+// export default Hero
+
+// import { useState } from "react";
+// import { motion, AnimatePresence } from "motion/react";
+// import { Particles } from "../components/Particles";
+
+// const Hero = () => {
+//   const [activeFile, setActiveFile] = useState("Profile.json");
+
+//   const files = [
+//     { name: "Profile.json", icon: "{}", target: "home", color: "text-yellow-400" },
+//     { name: "About.jsx", icon: "JS", target: "about", color: "text-blue-400" },
+//     { name: "Projects.py", icon: "PY", target: "projects", color: "text-green-400" },
+//     { name: "Education.ts", icon: "TS", target: "education", color: "text-royal" },
+//     { name: "Contact.css", icon: "#", target: "contact", color: "text-fuchsia" },
+//   ];
+
+//   const handleFileClick = (target, fileName) => {
+//     setActiveFile(fileName);
+//     const element = document.getElementById(target);
+//     if (element) {
+//       element.scrollIntoView({ behavior: "smooth" });
+//     }
+//   };
+
+//   return (
+//     <section id="home" className="relative w-full h-screen overflow-hidden bg-primary flex items-center justify-center c-space">
+//       <Particles className="absolute inset-0 z-0" quantity={100} staticity={50} color="#5c33cc" />
+
+//       <motion.div 
+//         initial={{ opacity: 0, y: 20 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         className="relative z-10 w-full max-w-5xl h-[75vh] md:h-[650px] bg-[#06091f]/90 backdrop-blur-2xl border border-white/10 rounded-lg shadow-2xl flex flex-col overflow-hidden"
+//       >
+//         {/* IDE Tab Bar */}
+//         <div className="w-full bg-white/5 border-b border-white/10 flex items-center px-4 justify-between">
+//           <div className="flex">
+//             {files.map((file) => (
+//               <div 
+//                 key={file.name}
+//                 onClick={() => handleFileClick(file.target, file.name)}
+//                 className={`px-4 py-3 text-xs font-mono flex items-center gap-2 cursor-pointer transition-colors border-r border-white/5 ${activeFile === file.name ? "bg-white/10 text-white border-b border-b-lavender" : "text-neutral-500 hover:bg-white/5"}`}
+//               >
+//                 <span className={`text-[10px] ${file.color}`}>{file.icon}</span>
+//                 {file.name}
+//               </div>
+//             ))}
+//           </div>
+//           <div className="hidden md:flex gap-2 opacity-50">
+//              <div className="w-3 h-3 rounded-full bg-white/10" />
+//              <div className="w-3 h-3 rounded-full bg-white/10" />
+//           </div>
+//         </div>
+
+//         <div className="flex flex-1 overflow-hidden">
+//           {/* Sidebar / File Explorer */}
+//           <div className="hidden md:flex w-48 bg-black/20 border-r border-white/10 flex-col p-4">
+//             <p className="text-[10px] font-bold text-neutral-600 uppercase tracking-widest mb-4">Explorer</p>
+//             <div className="space-y-2">
+//               <p className="text-xs text-neutral-400 font-mono flex items-center gap-2">
+//                 <span className="opacity-50">▼</span> portfolio_v2
+//               </p>
+//               <div className="pl-4 space-y-2">
+//                 {files.map((file) => (
+//                   <div 
+//                     key={file.name}
+//                     onClick={() => handleFileClick(file.target, file.name)}
+//                     className="text-xs text-neutral-500 font-mono hover:text-lavender cursor-pointer flex items-center gap-2 truncate"
+//                   >
+//                     <span className={file.color}>{file.icon}</span> {file.name}
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Main Editor Window */}
+//           <div className="flex-1 p-6 font-mono text-sm md:text-base overflow-y-auto custom-scrollbar bg-black/10">
+//             <div className="flex gap-4">
+//               {/* Line Numbers */}
+//               <div className="text-neutral-700 text-right select-none pr-4 border-r border-white/5 hidden sm:block">
+//                 {Array.from({ length: 15 }).map((_, i) => <p key={i}>{i + 1}</p>)}
+//               </div>
+
+//               {/* Code Content */}
+//               <div className="flex-1">
+//                 <span className="text-fuchsia">const</span> <span className="text-blue-400">developer</span> = {"{"}
+//                 <div className="pl-6">
+//                   <p><span className="text-neutral-400">name:</span> <span className="text-sand">"Gyan Aditya"</span>,</p>
+//                   <p><span className="text-neutral-400">role:</span> <span className="text-sand">"Full-Stack Engineer"</span>,</p>
+//                   <p><span className="text-neutral-400">status:</span> <span className="text-mint">"Placed @ Accenture"</span>,</p>
+//                   <p><span className="text-neutral-400">location:</span> <span className="text-sand">"Bhubaneswar, IN"</span>,</p>
+//                   <p><span className="text-neutral-400">skills:</span> [</p>
+//                   <div className="pl-6 text-lavender">
+//                     "MERN", "TensorFlow", "C++", "AWS"
+//                   </div>
+//                   <p>],</p>
+//                   <p><span className="text-neutral-400">openToWork:</span> <span className="text-orange">true</span></p>
+//                 </div>
+//                 {"};"}
+
+//                 <motion.div 
+//                   initial={{ opacity: 0 }}
+//                   animate={{ opacity: 1 }}
+//                   transition={{ delay: 1 }}
+//                   className="mt-12 p-6 bg-lavender/5 border border-lavender/20 rounded-lg max-w-xl"
+//                 >
+//                   <h1 className="text-2xl md:text-4xl font-bold text-white mb-2">Building scalable software architectures.</h1>
+//                   <p className="text-neutral-400 text-sm">
+//                     Final year B.Tech student at KIIT with an 8.51 CGPA. 
+//                     Passionate about AI/ML and modern web solutions.
+//                   </p>
+//                   <button 
+//                     onClick={() => handleFileClick("projects", "Projects.py")}
+//                     className="mt-6 px-6 py-2 bg-royal text-white rounded-md text-sm font-bold hover:bg-lavender transition-all cursor-pointer"
+//                   >
+//                     view_work()
+//                   </button>
+//                 </motion.div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Footer Bar */}
+//         <div className="w-full bg-royal/20 border-t border-white/10 px-4 py-1 flex items-center justify-between text-[10px] text-neutral-400 font-mono">
+//           <div className="flex gap-4">
+//             <span className="flex items-center gap-1 text-mint"><span className="w-2 h-2 rounded-full bg-mint animate-pulse"/> main*</span>
+//             <span className="hidden sm:inline">0 Errors</span>
+//             <span className="hidden sm:inline">0 Warnings</span>
+//           </div>
+//           <div className="flex gap-4">
+//             <span>UTF-8</span>
+//             <span>JavaScript React</span>
+//           </div>
+//         </div>
+//       </motion.div>
+
+//       {/* Background Decorative Glow */}
+//       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-royal/10 rounded-full blur-[140px] pointer-events-none" />
+//     </section>
+//   );
+// };
+
+// export default Hero;
+
+import { useState } from "react";
+import { motion } from "motion/react";
 
 const Hero = () => {
-    const isMobile =useMediaQuery({maxWidth:853});
+  const [storeState, setStoreState] = useState({
+    activeView: "INDEX",
+    academicCGPA: "8.51",
+    placementStatus: "ACCENTURE_CONFIRMED"
+  });
+
+  const actions = [
+    { type: "FETCH_BIOGRAPHY_DATA", payload: "about", tracking: "VIEW_ABOUT" },
+    { type: "LOAD_COMPUTATIONAL_PROJECTS", payload: "projects", tracking: "VIEW_PROJECTS" },
+    { type: "PULL_ACADEMIC_RECORDS", payload: "education", tracking: "VIEW_EDUCATION" },
+    { type: "INITIALIZE_COMMS_HANDSHAKE", payload: "contact", tracking: "VIEW_CONTACT" },
+  ];
+
+  const dispatchAction = (type, payload, tracking) => {
+    setStoreState((prev) => ({ ...prev, activeView: tracking }));
+    document.getElementById(payload)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section id="home" className='flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space'>
-        <HeroText/>
-        <ParallaxBackground/>
-        <figure className="absolute inset-0" style={{width: "100vw", height:"100vh"}}>
-            <Canvas camera={{position:[0,1,3]}}>
-                <Suspense fallback={<Loader/>}>
-                <Float>
-                 <Astronaut scale={isMobile && 0.23} position={isMobile && [0,-1.5,0]}/>
-                </Float>
-                <Rig/>
-                </Suspense>
-            </Canvas>
-        </figure>
+    <section id="home" className="w-full h-screen bg-[#030412] font-mono flex items-center justify-center p-6 relative overflow-hidden">
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+        
+        {/* Left Side Reducer Dispatch Column */}
+        <div className="md:col-span-7 flex flex-col gap-4 justify-center">
+          <div>
+            <span className="text-[10px] font-bold uppercase bg-royal/10 text-lavender border border-lavender/20 px-2.5 py-1 rounded-full">
+              Event Dispatcher
+            </span>
+            <h1 className="text-2xl font-black text-white mt-4 mb-2">Unidirectional Data Architecture</h1>
+            <p className="text-neutral-400 text-xs leading-relaxed max-w-md mb-4">
+              Dispatch immutable event actions to transition state views across application directory sections.
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            {actions.map((act) => (
+              <button
+                key={act.type}
+                onClick={() => dispatchAction(act.type, act.payload, act.tracking)}
+                className="w-full text-left p-3 rounded-xl border border-white/5 bg-white/5 hover:bg-royal/10 hover:border-royal/40 text-xs transition-all flex items-center justify-between group cursor-pointer"
+              >
+                <div className="flex items-center gap-2 truncate pr-2">
+                  <span className="text-neutral-600 font-bold text-[10px]">dispatch()</span>
+                  <span className="text-white font-semibold truncate group-hover:text-lavender transition-colors">{act.type}</span>
+                </div>
+                <span className="text-neutral-500 shrink-0 text-[10px]">{"{ payload: '"}{act.payload}{"' }"}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Right Side State Store Monitor Column */}
+        <div className="md:col-span-5 bg-black/30 border border-white/5 rounded-2xl p-6 flex flex-col justify-between backdrop-blur-xl">
+          <div>
+            <div className="flex items-center justify-between border-b border-white/5 pb-2 mb-4">
+              <span className="text-xs font-bold text-neutral-400">State Tree Monitor</span>
+              <span className="text-[10px] px-2 py-0.5 rounded bg-mint/10 text-mint font-bold border border-mint/20">LIVE</span>
+            </div>
+            
+            <div className="text-xs sm:text-sm space-y-3 font-mono">
+              <div>
+                <p className="text-neutral-500">// current active node parameter</p>
+                <p className="text-white">activeView: <span className="text-sand">"{storeState.activeView}"</span></p>
+              </div>
+              <div>
+                <p className="text-neutral-500">// immutable university registry</p>
+                <p className="text-white">academicCGPA: <span className="text-fuchsia">{storeState.academicCGPA}</span></p>
+              </div>
+              <div>
+                <p className="text-neutral-500">// system entry allocation status</p>
+                <p className="text-white">placementStatus: <span className="text-mint">"{storeState.placementStatus}"</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-[10px] text-neutral-600 mt-6 pt-2 border-t border-white/5">
+            Store Listener: State Mutated via Strict Actions.
+          </div>
+        </div>
+
+      </div>
     </section>
-  )
-}
+  );
+};
 
-function Rig(){
-    return useFrame((state,delta)=>{
-        easing.damp3(state.camera.position,[state.mouse.x/10,1+state.mouse.y/10,3],0.5,delta);
-    });
-}
-
-export default Hero
-
+export default Hero;
 ================================================================================
 
 
@@ -2312,64 +2805,76 @@ FILE: src/sections/Navbar.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.92 KB
+Size: 2.43 KB
 Extension: .jsx
 Language: jsx
 Location: src/sections/Navbar.jsx
 Relative Path: src/sections
 Created: 2025-11-18 12:47:44 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-27 13:32:13 (Asia/Calcutta / GMT+06:30)
-MD5: 0f202a4fad0674fadb1034e36c7d6a75
-SHA256: e5982abc476e5d2d20e16c10fd0951713e886b4098de8f088c230c2c6309cca1
+Modified: 2026-06-04 20:30:38 (Asia/Calcutta / GMT+06:30)
+MD5: 33e12775cd9de92d180db2e29a9346ea
+SHA256: a750dd6d7f7cd93b3774ed043b80ab6232b4c0defcaf95b4967210e4a03763cc
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
+// 
+
 import { useState } from 'react';
-import {motion} from 'motion/react';
+import { motion } from 'motion/react';
 
-const BASE_URL = import.meta.env.BASE_URL
+const BASE_URL = import.meta.env.BASE_URL;
 
-function Navigation(){
-    return (
-        <ul className='nav-ul'>
-            <li className='nav-li'>
-                <a className='nav-link' href='#home'>Home</a>
-            </li>
-            <li className='nav-li'>
-                <a className='nav-link' href='#about'>About</a>
-            </li>
-            <li className='nav-li'>
-                <a className='nav-link' href='#education'>Educations</a>
-            </li>
-            <li className='nav-li'>
-                <a className='nav-link' href='#contact'>Contact</a>
-            </li>
-        </ul>
-    );
+function Navigation() {
+  return (
+    <ul className='nav-ul'>
+      <li className='nav-li'><a className='nav-link' href='#home'>Home</a></li>
+      <li className='nav-li'><a className='nav-link' href='#about'>About</a></li>
+      <li className='nav-li'><a className='nav-link' href='#education'>Educations</a></li>
+      <li className='nav-li'><a className='nav-link' href='#contact'>Contact</a></li>
+    </ul>
+  );
 }
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <div className='fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40'>
-            <div className='mx-auto c-space max-w-7xl'>
-                <div className='flex items-center justify-between py-2 sm:py-0'>
-                    <a href={`/${BASE_URL}`} className='text-xl font-bold transition-colors text-neutral-400 hover:text-white'>Gyan Aditya</a>
-                    <button onClick={()=>setIsOpen(!isOpen)} className='flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden'>
-                        <img src={isOpen ? 'assets/close.svg':'assets/menu.svg'} className='w-6 h-6' alt='toggle' />
-                    </button>
-                    <nav className='hidden sm:flex'><Navigation/></nav>
-                </div> 
-            </div>
-            {isOpen && (<motion.div className='block overflow-hidden text-center sm:hidden' initial={{opacity:0, x:-10}} animate={{opacity:1, x:0}} style={{maxHeight:'100vh'}} transition={{duration:1}}>
-                <nav onClick={()=>setIsOpen(!isOpen)} className='pb-5'><Navigation/></nav>
-            </motion.div>)}
-        </div>
-    )
-}
-export default Navbar;
+  const [isOpen, setIsOpen] = useState(false);
 
+  return (
+    <div className='fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40'>
+      <div className='mx-auto c-space max-w-7xl'>
+        <div className='flex items-center justify-between py-3 sm:py-4'>
+          {/* Brand Name with Live Status Indicator */}
+          <div className='flex items-center gap-3'>
+            <a href={`/${BASE_URL}`} className='text-xl font-bold transition-colors text-neutral-400 hover:text-white'>
+              Gyan Aditya
+            </a>
+            <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-mint/10 border border-mint/20">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-mint opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-mint"></span>
+              </span>
+              <span className="text-[10px] font-semibold text-mint uppercase tracking-wider">Available</span>
+            </div>
+          </div>
+
+          <button onClick={() => setIsOpen(!isOpen)} className='flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden'>
+            <img src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} className='w-6 h-6' alt='toggle' />
+          </button>
+          
+          <nav className='hidden sm:flex'><Navigation/></nav>
+        </div> 
+      </div>
+      
+      {isOpen && (
+        <motion.div className='block overflow-hidden text-center sm:hidden bg-primary/95 border-b border-white/5' initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+          <nav onClick={() => setIsOpen(!isOpen)} className='pb-5 pt-2'><Navigation/></nav>
+        </motion.div>
+      )}
+    </div>
+  );
+};
+
+export default Navbar;
 ================================================================================
 
 
@@ -2431,75 +2936,55 @@ FILE: src/sections/Testimonial.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.92 KB
+Size: 1.85 KB
 Extension: .jsx
 Language: jsx
 Location: src/sections/Testimonial.jsx
 Relative Path: src/sections
 Created: 2025-11-20 20:38:51 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-21 13:02:26 (Asia/Calcutta / GMT+06:30)
-MD5: e5be0dc15a9a4e7511a8a489a22de2d9
-SHA256: 1a12997ac05fe1f274eb00353f9af16a6c36bdd9fcd0b5781c188844b0222199
+Modified: 2026-06-04 21:01:07 (Asia/Calcutta / GMT+06:30)
+MD5: 504deb0cdec4ac2d5af48b86ae351fd1
+SHA256: 8d7e105f90f314ef1be78b73ed5ff13ed8e0541ca0e8fb287bb04b880c6addb9
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-import { twMerge } from "tailwind-merge"
-import { Marquee } from "../components/Marquee"
-import { reviews } from "../constants"
+// 
+import { Marquee } from "../components/Marquee";
 
-const firstRow = reviews.slice(0, reviews.length / 2)
-const secondRow = reviews.slice(reviews.length / 2)
-
-const ReviewCard = ({
-  img,
-  name,
-  company,
-  body,
-}) => {
-  return (
-    <figure
-      className={twMerge(
-        "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-50/[.1] bg-gradient-to-r bg-indigo to-storm hover:bg-royal hover-animation",
-      )}
-    >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full bg-white/10" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium text-white/40">{company}</p>
-        </div>
-      </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
-    </figure>
-  )
-}
+const metrics = [
+  { label: "CGPA", value: "8.51/10", detail: "KIIT University" },
+  { label: "Placement", value: "Accenture", detail: "Future ASE" },
+  { label: "Challenges", value: "150+", detail: "LeetCode Solved[cite: 1]" },
+  { label: "Certifications", value: "AWS", detail: "Cloud Practitioner[cite: 1]" },
+  { label: "Open Source", value: "Digitomize", detail: "Contributor[cite: 1]" },
+  { label: "Internship", value: "AICTE", detail: "AI-ML Virtual[cite: 1]" },
+];
 
 export default function Testimonial() {
   return (
-    <div className="items-start mt-25 md:mt-35 c-space">
-      <h2 className="text-heading">Testimonial</h2>
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden mt-12">
-      <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review) => (
-          <ReviewCard key={review.company} {...review} />
-        ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((review) => (
-          <ReviewCard key={review.company} {...review} />
-        ))}
-      </Marquee>
-      <div className="from-primary pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
-      <div className="from-primary pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+    <div className="section-spacing c-space">
+      <h2 className="text-heading">Proven Excellence</h2>
+      <p className="subtext mt-2 mb-12">Quantified achievements and verified engineering milestones[cite: 1].</p>
+      
+      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+        <Marquee pauseOnHover className="[--duration:30s] gap-6">
+          {metrics.map((item, idx) => (
+            <div key={idx} className="flex flex-col items-center justify-center min-w-[200px] p-6 grid-default-color border border-white/5 rounded-2xl hover:border-lavender/50 transition-colors">
+              <span className="text-lavender text-xs font-bold uppercase tracking-tighter mb-2">{item.label}</span>
+              <span className="text-3xl font-black text-white">{item.value}</span>
+              <span className="text-neutral-500 text-[10px] mt-1 italic">{item.detail}</span>
+            </div>
+          ))}
+        </Marquee>
+        
+        {/* Shadow Overlay for depth */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-primary"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-primary"></div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
-
-
 ================================================================================
 
 
@@ -2509,15 +2994,15 @@ FILE: src/App.jsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 629 B
+Size: 950 B
 Extension: .jsx
 Language: jsx
 Location: src/App.jsx
 Relative Path: src
 Created: 2025-11-18 12:02:03 (Asia/Calcutta / GMT+06:30)
-Modified: 2026-06-03 19:41:29 (Asia/Calcutta / GMT+06:30)
-MD5: e6baf3922e841c8e7050872cee51c080
-SHA256: c135975e72b58044e0648d5fed6d9471e3ead05d8f41d91cbbc6ec713ebe510f
+Modified: 2026-06-04 20:34:04 (Asia/Calcutta / GMT+06:30)
+MD5: 526a793717a9a6d872711520658315b8
+SHA256: 378dca2418980bebe74a08413c9d0b739cd967e92605cd18eac748d74c5b2522
 Encoding: ASCII
 
 FILE CONTENT:
@@ -2525,6 +3010,7 @@ FILE CONTENT:
 import React from 'react';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
+import CustomCursor from './components/CustomCursor';
 import About from './sections/About';
 import Projects from './sections/Projects';
 import Educations from './sections/Educations';
@@ -2534,7 +3020,18 @@ import Footer from './sections/Footer';
 
 const App = () => {
   return (
-    <div className='container mx-auto max-w-7xl'>
+    // <div className='container mx-auto max-w-7xl'>
+    //   <Navbar />
+    //   <Hero />
+    //   <About />
+    //   <Projects />
+    //   <Educations />
+    //   <Testimonial />
+    //   <Contact />
+    //   <Footer/>
+    // </div>
+    <div className='container mx-auto max-w-7xl relative'>
+      <CustomCursor />
       <Navbar />
       <Hero />
       <About />
@@ -2558,15 +3055,15 @@ FILE: src/index.css
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 3.51 KB
+Size: 4.36 KB
 Extension: .css
 Language: css
 Location: src/index.css
 Relative Path: src
 Created: 2025-11-18 12:02:03 (Asia/Calcutta / GMT+06:30)
-Modified: 2025-11-18 12:17:48 (Asia/Calcutta / GMT+06:30)
-MD5: 88ce4a84e6b9ef25b1803e33de5de895
-SHA256: 19fb577be9c71d0e1a9e7e2056cb7e9bc894d5cf817ecde1470ad2b9e1d8e182
+Modified: 2026-06-04 21:05:47 (Asia/Calcutta / GMT+06:30)
+MD5: 550a0836b3e4a6ea3c858f6df7b3518d
+SHA256: 1bc3ccd86227d06aabef2d308c96bf075422178208ed0c60406c6fdd47d8b66c
 Encoding: ASCII
 
 FILE CONTENT:
@@ -2627,6 +3124,25 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+/* Custom Scrollbar for Terminal */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(122, 87, 219, 0.2);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(122, 87, 219, 0.5);
+}
+
+/* Cursor hidden for entire section because we have CustomCursor */
+#home input {
+  caret-color: #7a57db; /* Matches lavender */
+}
 
 .c-space {
   @apply sm:px-10 px-5 lg:px-15;
@@ -2686,6 +3202,18 @@ body {
   @apply row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
 
+/* .grid-default-color {
+  @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl;
+}
+
+.grid-special-color {
+  @apply p-6 bg-gradient-to-b from-royal to-lavender rounded-2xl;
+}
+.grid-black-color {
+  @apply p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
+} */
+
+/* Ensure these color utilities exist cleanly within your style file sheets */
 .grid-default-color {
   @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl;
 }
@@ -2693,6 +3221,7 @@ body {
 .grid-special-color {
   @apply p-6 bg-gradient-to-b from-royal to-lavender rounded-2xl;
 }
+
 .grid-black-color {
   @apply p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
 }
